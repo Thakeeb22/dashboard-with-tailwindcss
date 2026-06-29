@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-50 h-screen overflow-hidden">
+    <div
+      class="grid grid-cols-6 grid-rows-[auto_1fr_auto] justify-center h-screen"
+    >
+      <aside
+        class="col-span-1 row-span-3 h-screen p-6 bg-gray-200 flex flex-col justify-between"
+      >
+        <div class="flex flex-col gap-4">
+          <div>
+            <h1 class="text-2xl text-blue-500 font-bold">Admin Name</h1>
+            <small class="text-gray-400">Admin position</small>
+          </div>
+          <ul class="flex flex-col gap-4">
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold bg-blue-500 rounded-md text-white"
+            >
+              <i class="fa-solid fa-table-columns"></i> Dashboard
+            </li>
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold text-blue-500 rounded-md hover:bg-blue-500 focus:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-solid fa-user-group"></i> Users
+            </li>
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold text-blue-500 rounded-md hover:bg-blue-500 focus:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-solid fa-chart-line"></i> Analytics
+            </li>
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold text-blue-500 rounded-md hover:bg-blue-500 focus:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-regular fa-file-lines"></i> Reports
+            </li>
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold text-blue-500 rounded-md hover:bg-blue-500 focus:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-solid fa-gear"></i> Settings
+            </li>
+          </ul>
+        </div>
+
+        <div class="border-t-2 border-blue-500 flex flex-col gap-4 p-3">
+          <button
+            class="bg-blue-500 p-3 rounded-md hover:bg-blue-300 text-semibold text-white transition-all duration-500"
+          >
+            <i class="fa-solid fa-plus"></i> New Report
+          </button>
+          <ul
+            class="text-blue-500 font-semibold transition-all duration-500 flex flex-col gap-4"
+          >
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold text-blue-500 rounded-md hover:bg-blue-500 focus:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-regular fa-circle-user"></i> Profile
+            </li>
+            <li
+              class="p-3 transition-all duration-500 cursor-pointer font-semibold text-blue-500 rounded-md hover:bg-blue-500 focus:bg-blue-500 hover:text-white"
+            >
+              <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <header
+        class="col-span-5 bg-gray-300 p-6 border-b-2 border-gray-400 flex justify-between items-center"
+      >
+        <span class="relative">
+          <input
+            type="text"
+            placeholder="Search Resources..."
+            class="py-2 px-6 rounded-lg outline-none border-2 border-white focus:border-2 hover:border-2 focus:border-blue-400 hover:border-blue-400 transition-all duration-500"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass absolute top-3 left-1 text-blue-500"
+          ></i>
+        </span>
+        <div
+          class="flex justify-center items-center gap-4 text-blue-500 text-xl"
+        >
+          <i
+            class="fa-solid fa-bell cursor-pointer hover:text-blue-400 transition-all duration-500"
+          ></i>
+          <i
+            class="fa-solid fa-circle-question cursor-pointer hover:text-blue-400 transition-all duration-500"
+          ></i>
+          <img
+            src="./images/images.jfif"
+            alt="profile image"
+            class="w-8 rounded-full border-2 border-blue-500"
+          />
+        </div>
+      </header>
+      <main
+        class="col-span-5 bg-white overflow-y-auto grid grid-cols-4 justify-center items-center gap-4 p-6"
+      >
+        <div
+          class="col-span-4 grid grid-cols-4 justify-center items-center gap-4"
+        >
+          <div class="rounded-lg shadow-lg flex flex-col justify-start p-6">
+            <div class="flex justify-between items-center">
+              <h3 class="uppercase">Total users</h3>
+              <div
+                class="p-1 rounded bg-blue-200 text-center text-blue-500 font-bold"
+              >
+                <i class="fa-regular fa-user"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-xl">12,480</h3>
+            <p>
+              <i class="fa-solid fa-arrow-trend-up"></i> +5.2% from last month
+            </p>
+          </div>
+          <div class="rounded-lg shadow-lg flex flex-col justify-start p-6">
+            <div class="flex justify-between items-center">
+              <h3 class="uppercase">Revenue</h3>
+              <div
+                class="p-1 rounded bg-red-200 text-center text-red-500 font-bold"
+              >
+                <i class="fa-solid fa-money-bills"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-xl">$42,500</h3>
+            <p><i class="fa-solid fa-arrow-trend-up"></i> +12.5% vs Q3</p>
+          </div>
+          <div class="rounded-lg shadow-lg flex flex-col justify-start p-6">
+            <div class="flex justify-between items-center">
+              <h3 class="uppercase">orders</h3>
+              <div
+                class="p-1 rounded bg-green-200 text-center text-green-500 font-bold"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-xl">1,250</h3>
+            <p><i class="fa-solid fa-arrow-trend-up"></i> 18 new today</p>
+          </div>
+          <div class="rounded-lg shadow-lg flex flex-col justify-start p-6">
+            <div class="flex justify-between items-center">
+              <h3 class="uppercase">growth rate</h3>
+              <div
+                class="p-1 rounded bg-blue-200 text-center text-blue-600 font-bold"
+              >
+                <i class="fa-regular fa-user"></i>
+              </div>
+            </div>
+            <h3 class="font-bold text-xl">+12.5%</h3>
+            <div
+              class="w-full h-2 bg-blue-200 rounded-full overflow-hidden mt-2"
+            >
+              <div class="h-full w-[25%] bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-3 p-6 shadow-lg rounded-md flex flex-col justify-center gap-4"
+        >
+          <div class="flex justify-between items-center gap-4">
+            <div>
+              <h3 class="text-xl font-bold">Revenue Analytics</h3>
+              <p>Monthly revenue growth and projects</p>
+            </div>
+            <div class="p-3 font-semibold bg-blue-200 rounded-md text-center">
+              Last 6 Months
+            </div>
+          </div>
+          <img
+            src="./images/chartpng.png"
+            alt="chartpng"
+            class="object-cover"
+          />
+        </div>
+        <div class="col-span-1 p-6 shadow-lg gap-4 rounded-md flex flex-col">
+          <div class="flex justify-between items-center">
+            <h2 class="font-bold text-xl">System Alerts</h2>
+            <div class="bg-red-600 p-1 text-white rounded-lg text-sm">
+              <p>3 NEW</p>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-start items-center">
+            <div class="text-red-600 p-1 rounded-full bg-red-300">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div>
+              <h3>Server Overload</h3>
+              <p>Node #04 reported 98..</p>
+              <small>2 MINS AGO</small>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-start items-center">
+            <div class="text-blue-600 p-1 rounded-full bg-blue-300">
+              <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <div>
+              <h3>New Tier 3 Client</h3>
+              <p>Nexus ENterprise just...</p>
+              <small>45 MINS AGO</small>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-start items-center">
+            <div class="text-yellow-600 p-1 rounded-full bg-yellow-300">
+              <i class="fa-solid fa-cloud-arrow-down"></i>
+            </div>
+            <div>
+              <h3>Backup complete</h3>
+              <p>All data successfully...</p>
+              <small>3 HOURS AGO</small>
+            </div>
+          </div>
+        </div>
+        
+      </main>
+      <footer
+        class="col-span-5 bg-gray-300 p-6 border-t-2 border-gray-400 flex justify-between items-center"
+      >
+        <p>&copy;2026 All Rights Reserved</p>
+        <ul class="flex justify-center items-center gap-4 cursor-pointer">
+          <li>Privacy Policy</li>
+          <li>Terms Of Service</li>
+          <li>Documentation</li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
